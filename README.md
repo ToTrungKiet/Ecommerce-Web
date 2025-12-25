@@ -1,154 +1,103 @@
-Website Thương Mại Điện Tử (E-commerce Website)
-🚀 Giới thiệu
+# Website Thương Mại Điện Tử (E-commerce Website)
 
-Đây là project Website Thương Mại Điện Tử nhằm mô phỏng một hệ thống bán hàng online hoàn chỉnh với đầy đủ các chức năng cơ bản của một website e-commerce hiện đại.
+## 🚀 Giới thiệu
 
-Hệ thống được chia thành 3 phần chính:
+Đây là project Website Thương Mại Điện Tử nhằm mô phỏng một hệ thống bán hàng online hoàn chỉnh với các chức năng cơ bản của một website e-commerce hiện đại.
 
-User (Khách hàng): Trải nghiệm mua sắm, xem sản phẩm, đặt hàng.
+Hệ thống bao gồm **3 phần chính**:
 
-Admin: Quản lý sản phẩm, đơn hàng và hệ thống.
+- **User (Khách hàng):** Trải nghiệm mua sắm và đặt hàng
+- **Admin:** Quản lý sản phẩm, đơn hàng và người dùng
+- **Backend (API):** Xử lý nghiệp vụ và xác thực hệ thống
 
-Backend (API): Xử lý nghiệp vụ, xác thực, và kết nối cơ sở dữ liệu.
+---
 
-⚙️ Chức năng chính
-🛒 Trang Người Dùng (Frontend)
+## ⚙️ Chức năng chính
 
-📝 Đăng ký / Đăng nhập tài khoản người dùng
+### 🛒 Trang Người Dùng (Frontend)
 
-🛍️ Xem danh sách sản phẩm
+- 📝 Đăng ký / Đăng nhập
+- 🛍️ Xem danh sách sản phẩm
+- 🔍 Xem chi tiết sản phẩm
+- 🛒 Thêm sản phẩm vào giỏ hàng
+- 💳 Đặt hàng
+- 📦 Theo dõi đơn hàng
+- 👤 Quản lý thông tin cá nhân
 
-🔍 Xem chi tiết sản phẩm
+---
 
-🛒 Thêm sản phẩm vào giỏ hàng
+### 👨‍💻 Trang Quản Trị (Admin Panel)
 
-💳 Đặt hàng
+- 🔐 Đăng nhập Admin (JWT Authentication)
+- ➕ Thêm / Sửa / Xóa sản phẩm
+- 📋 Quản lý danh sách sản phẩm
+- 📦 Quản lý đơn hàng
+- 👥 Quản lý người dùng
+- 📊 Dashboard thống kê cơ bản
 
-📦 Theo dõi trạng thái đơn hàng
+---
 
-👤 Quản lý thông tin cá nhân
+### ⚙️ Backend (API Server)
 
-👨‍💻 Trang Quản Trị (Admin Panel)
+- RESTful API cho frontend và admin
+- Xác thực và phân quyền bằng JWT
+- Quản lý người dùng, sản phẩm và đơn hàng
+- Kết nối cơ sở dữ liệu
 
-🔐 Đăng nhập Admin (xác thực bằng JWT)
+---
 
-➕ Thêm / Sửa / Xóa sản phẩm
+## 🛠️ Công nghệ sử dụng
 
-📋 Quản lý danh sách sản phẩm
+- **Frontend:** ReactJS, Vite, TailwindCSS
+- **Admin Panel:** ReactJS, Vite, TailwindCSS
+- **Backend:** Node.js, ExpressJS, JWT, dotenv
+- **Database:** MongoDB (Mongoose)
 
-📦 Quản lý đơn hàng
+---
 
-👥 Quản lý người dùng
+## 📂 Cấu trúc thư mục
 
-📊 Dashboard (thống kê cơ bản)
+### 📦 Ecommerce-Web
 
-⚙️ Backend (API Server)
+- 📂 **frontend** – Giao diện người dùng (React + Vite)
+  - 📂 src
+  - 📂 public
+  - 📂 dist
+  - 📜 package.json
+  - 📜 vite.config.js
 
-RESTful API cho frontend và admin
+- 📂 **backend** – Server & API (Node.js + Express)
+  - 📂 controllers
+  - 📂 models
+  - 📂 routes
+  - 📂 middleware
+  - 📂 config
+  - 📜 server.js
+  - 📜 package.json
+  - 📜 .env
 
-Xác thực & phân quyền bằng JWT
+- 📂 **admin** – Trang quản trị (Admin Panel)
+  - 📂 src
+  - 📂 public
+  - 📜 package.json
+  - 📜 vite.config.js
+  - 📜 .env
 
-Quản lý:
+- 📜 .gitignore
+- 📜 README.md
 
-Người dùng
 
-Sản phẩm
+ ---
 
-Đơn hàng
+## 🌐 Triển khai (Deploy)
 
-Kết nối cơ sở dữ liệu
+- **Frontend:** Render (Static Site)
+- **Admin Panel:** Render (Static Site)
+- **Backend:** Render (Web Service)
+- **Database:** MongoDB Atlas
 
-Cấu hình biến môi trường (.env)
+---
 
-🛠️ Công nghệ sử dụng
-Frontend (User)
+## 👤 Tác giả
 
-ReactJS
-
-Vite
-
-TailwindCSS
-
-Axios
-
-Admin Panel
-
-ReactJS
-
-Vite
-
-TailwindCSS
-
-Axios
-
-JWT Authentication
-
-Backend
-
-Node.js
-
-ExpressJS
-
-JSON Web Token (JWT)
-
-dotenv
-
-REST API
-
-Cơ sở dữ liệu
-
-MongoDB (Mongoose)
-
-📦 Ecommerce-Web
- ┣ 📂 frontend        # Giao diện người dùng (React + Vite)
- ┃ ┣ 📂 src
- ┃ ┣ 📂 public
- ┃ ┣ 📂 dist
- ┃ ┣ 📜 package.json
- ┃ ┗ 📜 vite.config.js
- ┣
- ┣ 📂 backend         # Server & API (Node.js + Express)
- ┃ ┣ 📂 controllers
- ┃ ┣ 📂 models
- ┃ ┣ 📂 routes
- ┃ ┣ 📂 middleware
- ┃ ┣ 📂 config
- ┃ ┣ 📜 server.js
- ┃ ┣ 📜 package.json
- ┃ ┗ 📜 .env
- ┣
- ┣ 📂 admin           # Trang quản trị (Admin Panel)
- ┃ ┣ 📂 src
- ┃ ┣ 📂 public
- ┃ ┣ 📜 package.json
- ┃ ┣ 📜 vite.config.js
- ┃ ┗ 📜 .env
- ┣
- ┣ 📜 .gitignore
- ┗ 📜 README.md
-
-🌐 Triển khai (Deploy)
-
-Frontend: Render (Static Site)
-
-Admin Panel: Render (Static Site)
-
-Backend: Render (Web Service)
-
-Database: MongoDB Atlas
-
-👤 Tác giả
-
-Tô Trung Kiệt
-
-📌 Ghi chú
-
-Project được xây dựng với mục tiêu học tập và thực hành full-stack
-
-Tập trung vào:
-
-Luồng frontend – backend
-
-Xác thực JWT
-
-Deploy thực tế trên Render
+- **Tô Trung Kiệt**
